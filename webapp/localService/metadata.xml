@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZDEV259_CR_QUERY_CDS" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
+            <EntityType Name="ZDEV259_CR_QUERYType" sap:label="Query Exposed for Odata Service" sap:semantics="aggregate" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" Nullable="false" sap:filterable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="TotaledProperties" Type="Edm.String" sap:aggregation-role="totaled-properties-list" sap:is-annotation="true" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="LastUpdateBy" Type="Edm.String" MaxLength="12" sap:aggregation-role="dimension" sap:label="Last Updated By" sap:quickinfo="Last Changed By User" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="StartDate" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:text="StartDate_T" sap:label="Start Date" sap:quickinfo="Start date of change request" sap:creatable="false" sap:updatable="false" sap:semantics="yearmonthday"/>
+                <Property Name="StartDate_T" Type="Edm.String" MaxLength="10" sap:label="Start Date (Description)" sap:quickinfo="Start date of change request" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="Title" Type="Edm.String" MaxLength="100" sap:aggregation-role="dimension" sap:label="Title" sap:quickinfo="Title of Change request" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="EndDate" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:text="EndDate_T" sap:label="End Date" sap:quickinfo="End date of change request" sap:creatable="false" sap:updatable="false" sap:semantics="yearmonthday"/>
+                <Property Name="EndDate_T" Type="Edm.String" MaxLength="10" sap:label="End Date (Description)" sap:quickinfo="End date of change request" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="CreateBy" Type="Edm.String" MaxLength="12" sap:aggregation-role="dimension" sap:label="Created By" sap:quickinfo="Created By User" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="IdCr" Type="Edm.String" MaxLength="11" sap:aggregation-role="dimension" sap:label="Change Request ID" sap:quickinfo="ID Change Request" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="IdRequestor" Type="Edm.String" MaxLength="12" sap:aggregation-role="dimension" sap:label="Requestor" sap:quickinfo="ID Requestor" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Priority" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:label="Priority" sap:quickinfo="Priority of change request" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="AssignedTeam" Type="Edm.String" MaxLength="50" sap:aggregation-role="dimension" sap:label="Assigned Team" sap:quickinfo="Assigned team of change request" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Status" Type="Edm.String" MaxLength="30" sap:aggregation-role="dimension" sap:label="Status" sap:quickinfo="Status of change request" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="CreateDate" Type="Edm.Decimal" Precision="42" Scale="7" sap:aggregation-role="measure" sap:filterable="false" sap:text="CreateDate_F" sap:updatable="false" sap:label="Create Date" sap:quickinfo="Creation Date Time" sap:creatable="false"/>
+                <Property Name="CreateDate_F" Type="Edm.String" MaxLength="60" sap:label="Create Date (Formatted)" sap:quickinfo="Creation Date Time" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="Effort" Type="Edm.Decimal" Precision="42" Scale="2" sap:aggregation-role="measure" sap:filterable="false" sap:text="Effort_F" sap:updatable="false" sap:label="Effort" sap:quickinfo="Effort of change request" sap:creatable="false"/>
+                <Property Name="Effort_F" Type="Edm.String" MaxLength="60" sap:label="Effort (Formatted)" sap:quickinfo="Effort of change request" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="LastUpdateDate" Type="Edm.Decimal" Precision="42" Scale="7" sap:aggregation-role="measure" sap:filterable="false" sap:text="LastUpdateDate_F" sap:updatable="false" sap:label="Last Updated" sap:quickinfo="Last Change Date Time" sap:creatable="false"/>
+                <Property Name="LastUpdateDate_F" Type="Edm.String" MaxLength="60" sap:label="Last Updated (Formatted)" sap:quickinfo="Last Change Date Time" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="ODataQueryAdditionalMetadata" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ODataQueryMetadata"/>
+                </Key>
+                <Property Name="ODataQueryMetadata" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ODataQueryMetadataValue_Current" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ODataQueryMetadataValueAtDefine" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityContainer Name="ZDEV259_CR_QUERY_CDS_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="ZDEV259_CR_QUERY" EntityType="ZDEV259_CR_QUERY_CDS.ZDEV259_CR_QUERYType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="AdditionalMetadata" EntityType="ZDEV259_CR_QUERY_CDS.ODataQueryAdditionalMetadata" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link rel="self" href="http://s35.gb.ucc.cit.tum.de/sap/opu/odata/sap/ZDEV259_CR_QUERY_CDS/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="http://s35.gb.ucc.cit.tum.de/sap/opu/odata/sap/ZDEV259_CR_QUERY_CDS/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

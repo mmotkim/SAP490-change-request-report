@@ -1,0 +1,11 @@
+{
+    "base": "./dist",
+    "conn_server": "https://s35.gb.ucc.cit.tum.de",
+    "conn_user": "LEARN-259",
+    "conn_client": "302",
+    "conn_password": "Ace01012002",
+    "abap_package": "Z_259_CR",
+    "abap_transport": "S35K900658",
+    "abap_bsp": "ZCR",
+    "abap_bsp_text": "Change Request Report"
+}
