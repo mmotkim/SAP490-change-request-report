@@ -24,7 +24,7 @@
             "ZDEV259_CR_QUERY_CDS_VAN",
             "annotation"
           ],
-          "localUri": "localService/metadata.xml",
+          "localUri": "localService/mainService/metadata.xml",
           "odataVersion": "2.0"
         }
       },
@@ -32,7 +32,7 @@
         "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZDEV259_CR_QUERY_CDS_VAN',Version='0001')/$value/",
         "type": "ODataAnnotation",
         "settings": {
-          "localUri": "localService/ZDEV259_CR_QUERY_CDS_VAN.xml"
+          "localUri": "localService/mainService/ZDEV259_CR_QUERY_CDS_VAN.xml"
         }
       },
       "annotation": {
@@ -128,11 +128,11 @@
           "settings": {
             "condensedTableLayout": true,
             "showGoButtonOnFilterBar": true,
-            "tableType": "AnalyticalTable",
             "autoHide": true,
             "smartVariantManagement": false,
             "tableSettings": {
-              "multiSelect": false
+              "multiSelect": false,
+              "type": "GridTable"
             },
             "keyPerformanceIndicators": {}
           }

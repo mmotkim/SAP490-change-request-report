@@ -26,6 +26,9 @@
     </edmx:Reference>
     <edmx:DataServices>
         <Schema Namespace="zdev259_cr_query_cds_van.v1" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="ZDEV259_CR_QUERY_CDS.ZDEV259_CR_QUERYType/ID">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
             <Annotations Target="ZDEV259_CR_QUERY_CDS.ZDEV259_CR_QUERYType/TotaledProperties">
                 <Annotation Term="UI.Hidden"/>
             </Annotations>

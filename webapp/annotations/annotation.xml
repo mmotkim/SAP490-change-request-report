@@ -16,7 +16,6 @@
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="IdCr"/>
                             <PropertyValue Property="Label" String="Change Request ID"/>
-                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="Title"/>
@@ -35,8 +34,24 @@
                             <PropertyValue Property="Label" String="Priority"/>
                         </Record>
                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="IdTask"/>
+                            <PropertyValue Property="Label" String="Task ID"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ModuleT"/>
+                            <PropertyValue Property="Label" String="Task Module"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="TaskType"/>
+                            <PropertyValue Property="Label" String="Task Type"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="TaskStatus"/>
+                            <PropertyValue Property="Label" String="Task Status"/>
+                        </Record>
+                        <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="Status"/>
-                            <PropertyValue Property="Label" String="Status"/>
+                            <PropertyValue Property="Label" String="Change Request Status"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="Effort"/>
@@ -109,6 +124,9 @@
                         <PropertyPath>StartDate</PropertyPath>
                         <PropertyPath>CreateBy</PropertyPath>
                         <PropertyPath>Effort</PropertyPath>
+                        <PropertyPath>IdTask</PropertyPath>
+                        <PropertyPath>TaskStatus</PropertyPath>
+                        <PropertyPath>ModuleT</PropertyPath>
                     </Collection>
                 </Annotation>
             </Annotations>

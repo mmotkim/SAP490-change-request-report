@@ -43,7 +43,9 @@ server:
         mountPath: /
         services:
           - urlPath: /sap/opu/odata/sap/ZDEV259_CR_QUERY_CDS
-            metadataPath: ./webapp/localService/metadata.xml
-            mockdataPath: ./webapp/localService/data
+            metadataPath: ./webapp/localService/mainService/metadata.xml
+            mockdataPath: ./webapp/localService/mainService/data
             generateMockData: true
-        annotations: []
+        annotations:
+          - localPath: ./webapp/localService/mainService/ZDEV259_CR_QUERY_CDS_VAN.xml
+            urlPath: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZDEV259_CR_QUERY_CDS_VAN',Version='0001')/$value/
