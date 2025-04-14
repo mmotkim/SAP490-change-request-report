@@ -1,12 +1,12 @@
 <edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
     <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
-        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common" />
     </edmx:Reference>
     <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
-        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI" />
     </edmx:Reference>
     <edmx:Reference Uri="/sap/opu/odata/sap/ZDEV259_CR_QUERY_CDS/$metadata">
-        <edmx:Include Namespace="ZDEV259_CR_QUERY_CDS" Alias="SAP"/>
+        <edmx:Include Namespace="ZDEV259_CR_QUERY_CDS" Alias="SAP" />
     </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
@@ -14,56 +14,56 @@
                 <Annotation Term="UI.LineItem">
                     <Collection>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="IdCr"/>
-                            <PropertyValue Property="Label" String="Change Request ID"/>
+                            <PropertyValue Property="Value" Path="IdCr" />
+                            <PropertyValue Property="Label" String="Change Request ID" />
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="Title"/>
-                            <PropertyValue Property="Label" String="Title"/>
+                            <PropertyValue Property="Value" Path="Title" />
+                            <PropertyValue Property="Label" String="Title" />
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="IdRequestor"/>
-                            <PropertyValue Property="Label" String="Requestor"/>
+                            <PropertyValue Property="Value" Path="IdRequestor" />
+                            <PropertyValue Property="Label" String="Requestor" />
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="AssignedTeam"/>
-                            <PropertyValue Property="Label" String="Assigned Team"/>
+                            <PropertyValue Property="Value" Path="AssignedTeam" />
+                            <PropertyValue Property="Label" String="Assigned Team" />
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="Priority"/>
-                            <PropertyValue Property="Label" String="Priority"/>
+                            <PropertyValue Property="Value" Path="Priority" />
+                            <PropertyValue Property="Label" String="Priority" />
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="IdTask"/>
-                            <PropertyValue Property="Label" String="Task ID"/>
+                            <PropertyValue Property="Value" Path="IdTask" />
+                            <PropertyValue Property="Label" String="Task ID" />
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="ModuleT"/>
-                            <PropertyValue Property="Label" String="Task Module"/>
+                            <PropertyValue Property="Value" Path="ModuleT" />
+                            <PropertyValue Property="Label" String="Task Module" />
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="TaskType"/>
-                            <PropertyValue Property="Label" String="Task Type"/>
+                            <PropertyValue Property="Value" Path="TaskType" />
+                            <PropertyValue Property="Label" String="Task Type" />
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="TaskStatus"/>
-                            <PropertyValue Property="Label" String="Task Status"/>
+                            <PropertyValue Property="Value" Path="TaskStatus" />
+                            <PropertyValue Property="Label" String="Task Status" />
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="Status"/>
-                            <PropertyValue Property="Label" String="Change Request Status"/>
+                            <PropertyValue Property="Value" Path="Status" />
+                            <PropertyValue Property="Label" String="Change Request Status" />
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="Effort"/>
-                            <PropertyValue Property="Label" String="Effort"/>
+                            <PropertyValue Property="Value" Path="Effort" />
+                            <PropertyValue Property="Label" String="Effort" />
                         </Record>
                     </Collection>
                 </Annotation>
                 <Annotation Term="UI.Chart" Qualifier="qualifier1">
                     <Record Type="UI.ChartDefinitionType">
-                        <PropertyValue Property="Description" String="Effort by Change Request"/>
-                        <PropertyValue Property="Title" String="Effort Chart"/>
-                        <PropertyValue Property="ChartType" EnumMember="UI.ChartType/Bar"/>
+                        <PropertyValue Property="Description" String="Effort by Change Request" />
+                        <PropertyValue Property="Title" String="Effort Chart" />
+                        <PropertyValue Property="ChartType" EnumMember="UI.ChartType/Bar" />
                         <PropertyValue Property="Dimensions">
                             <Collection>
                                 <PropertyPath>Title</PropertyPath>
@@ -72,8 +72,9 @@
                         <PropertyValue Property="DimensionAttributes">
                             <Collection>
                                 <Record Type="UI.ChartDimensionAttributeType">
-                                    <PropertyValue Property="Dimension" PropertyPath="Title"/>
-                                    <PropertyValue Property="Role" EnumMember="UI.ChartDimensionRoleType/Category"/>
+                                    <PropertyValue Property="Dimension" PropertyPath="Title" />
+                                    <PropertyValue Property="Role"
+                                        EnumMember="UI.ChartDimensionRoleType/Category" />
                                 </Record>
                             </Collection>
                         </PropertyValue>
@@ -85,8 +86,9 @@
                         <PropertyValue Property="MeasureAttributes">
                             <Collection>
                                 <Record Type="UI.ChartMeasureAttributeType">
-                                    <PropertyValue Property="Measure" PropertyPath="Effort"/>
-                                    <PropertyValue Property="Role" EnumMember="UI.ChartMeasureRoleType/Axis1"/>
+                                    <PropertyValue Property="Measure" PropertyPath="Effort" />
+                                    <PropertyValue Property="Role"
+                                        EnumMember="UI.ChartMeasureRoleType/Axis1" />
                                 </Record>
                             </Collection>
                         </PropertyValue>
@@ -94,17 +96,17 @@
                 </Annotation>
                 <Annotation Term="UI.PresentationVariant">
                     <Record Type="UI.PresentationVariantType">
-                        <PropertyValue Property="Text" String="Default"/>
+                        <PropertyValue Property="Text" String="Default" />
                         <PropertyValue Property="SortOrder">
                             <Collection>
                                 <Record Type="Common.SortOrderType">
-                                    <PropertyValue Property="Property" PropertyPath="Effort"/>
-                                    <PropertyValue Property="Descending" Bool="false"/>
+                                    <PropertyValue Property="Property" PropertyPath="Effort" />
+                                    <PropertyValue Property="Descending" Bool="false" />
                                 </Record>
                             </Collection>
                         </PropertyValue>
-                        <PropertyValue Property="IncludeGrandTotal" Bool="false"/>
-                        <PropertyValue Property="InitialExpansionLevel" Int="1"/>
+                        <PropertyValue Property="IncludeGrandTotal" Bool="false" />
+                        <PropertyValue Property="InitialExpansionLevel" Int="1" />
                         <PropertyValue Property="Visualizations">
                             <Collection>
                                 <AnnotationPath>@UI.LineItem</AnnotationPath>
@@ -128,6 +130,177 @@
                         <PropertyPath>TaskStatus</PropertyPath>
                         <PropertyPath>ModuleT</PropertyPath>
                     </Collection>
+                </Annotation>
+                
+                <Annotation Term="UI.Chart" Qualifier="filter2">
+                    <Record Type="UI.ChartDefinitionType">
+                        <PropertyValue Property="ChartType" EnumMember="UI.ChartType/Donut"/>
+                        <PropertyValue Property="Title" String="Start Date"/>
+                        <PropertyValue Property="Description" String="Start Date"/>
+                        <PropertyValue Property="Dimensions">
+                            <Collection>
+                                <PropertyPath>AssignedTeam</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="DimensionAttributes">
+                            <Collection>
+                                <Record Type="UI.ChartDimensionAttributeType">
+                                    <PropertyValue Property="Dimension" PropertyPath="AssignedTeam"/>
+                                    <PropertyValue Property="Role" EnumMember="UI.ChartDimensionRoleType/Category"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Measures">
+                            <Collection>
+                                <PropertyPath>Effort</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="MeasureAttributes">
+                            <Collection>
+                                <Record Type="UI.ChartMeasureAttributeType">
+                                    <PropertyValue Property="Measure" PropertyPath="Effort"/>
+                                    <PropertyValue Property="Role" EnumMember="UI.ChartMeasureRoleType/Axis1"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.PresentationVariant" Qualifier="filter2">
+                    <Record Type="UI.PresentationVariantType">
+                        <PropertyValue Property="Visualizations">
+                            <Collection>
+                                <AnnotationPath>@UI.Chart#filter2</AnnotationPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.Chart" Qualifier="filter3">
+                    <Record Type="UI.ChartDefinitionType">
+                        <PropertyValue Property="ChartType" EnumMember="UI.ChartType/Bar"/>
+                        <PropertyValue Property="Dimensions">
+                            <Collection>
+                                <PropertyPath>AssignedTeam</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="DimensionAttributes">
+                            <Collection>
+                                <Record Type="UI.ChartDimensionAttributeType">
+                                    <PropertyValue Property="Dimension" PropertyPath="AssignedTeam"/>
+                                    <PropertyValue Property="Role" EnumMember="UI.ChartDimensionRoleType/Category"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Measures">
+                            <Collection>
+                                <PropertyPath>NumberOfCR</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="MeasureAttributes">
+                            <Collection>
+                                <Record Type="UI.ChartMeasureAttributeType">
+                                    <PropertyValue Property="Measure" PropertyPath="NumberOfCR"/>
+                                    <PropertyValue Property="Role" EnumMember="UI.ChartMeasureRoleType/Axis1"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.PresentationVariant" Qualifier="filter3">
+                    <Record Type="UI.PresentationVariantType">
+                        <PropertyValue Property="Visualizations">
+                            <Collection>
+                                <AnnotationPath>@UI.Chart#filter3</AnnotationPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.Chart" Qualifier="filter4">
+                    <Record Type="UI.ChartDefinitionType">
+                        <PropertyValue Property="ChartType" EnumMember="UI.ChartType/Line"/>
+                        <PropertyValue Property="Dimensions">
+                            <Collection>
+                                <PropertyPath>StartDate</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="DimensionAttributes">
+                            <Collection>
+                                <Record Type="UI.ChartDimensionAttributeType">
+                                    <PropertyValue Property="Dimension" PropertyPath="StartDate"/>
+                                    <PropertyValue Property="Role" EnumMember="UI.ChartDimensionRoleType/Category"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Measures">
+                            <Collection>
+                                <PropertyPath>NumberOfCR</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="MeasureAttributes">
+                            <Collection>
+                                <Record Type="UI.ChartMeasureAttributeType">
+                                    <PropertyValue Property="Measure" PropertyPath="NumberOfCR"/>
+                                    <PropertyValue Property="Role" EnumMember="UI.ChartMeasureRoleType/Axis1"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.PresentationVariant" Qualifier="filter4">
+                    <Record Type="UI.PresentationVariantType">
+                        <PropertyValue Property="Visualizations">
+                            <Collection>
+                                <AnnotationPath>@UI.Chart#filter4</AnnotationPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP.ZDEV259_CR_QUERYType/IdCr">
+                <Annotation Term="Common.ValueList">
+                    <Record Type="Common.ValueListType">
+                        <PropertyValue Property="CollectionPath" String="ZDEV259_CR_QUERY"/>
+                        <PropertyValue Property="PresentationVariantQualifier" String="filter2"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="AssignedTeam"/>
+                                    <PropertyValue Property="ValueListProperty" String="AssignedTeam"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP.ZDEV259_CR_QUERYType/AssignedTeam">
+                <Annotation Term="Common.ValueList">
+                    <Record Type="Common.ValueListType">
+                        <PropertyValue Property="CollectionPath" String="ZDEV259_CR_QUERY"/>
+                        <PropertyValue Property="PresentationVariantQualifier" String="filter3"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="AssignedTeam"/>
+                                    <PropertyValue Property="ValueListProperty" String="AssignedTeam"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP.ZDEV259_CR_QUERYType/StartDate">
+                <Annotation Term="Common.ValueList">
+                    <Record Type="Common.ValueListType">
+                        <PropertyValue Property="CollectionPath" String="ZDEV259_CR_QUERY"/>
+                        <PropertyValue Property="PresentationVariantQualifier" String="filter4"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="StartDate"/>
+                                    <PropertyValue Property="ValueListProperty" String="StartDate"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
                 </Annotation>
             </Annotations>
         </Schema>

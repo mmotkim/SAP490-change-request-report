@@ -34,6 +34,8 @@
                 <Property Name="CreateDate_F" Type="Edm.String" MaxLength="60" sap:label="Create Date (Formatted)" sap:quickinfo="Creation Date Time" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
                 <Property Name="Effort" Type="Edm.Decimal" Precision="42" Scale="2" sap:aggregation-role="measure" sap:filterable="false" sap:text="Effort_F" sap:updatable="false" sap:label="Effort" sap:quickinfo="Effort of change request" sap:creatable="false"/>
                 <Property Name="Effort_F" Type="Edm.String" MaxLength="60" sap:label="Effort (Formatted)" sap:quickinfo="Effort of change request" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="NumberOfCR" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:filterable="false" sap:text="NumberOfCR_F" sap:updatable="false" sap:label="Number Of Change Request" sap:creatable="false"/>
+                <Property Name="NumberOfCR_F" Type="Edm.String" MaxLength="60" sap:label="Number Of Change Request (Formatted)" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
                 <Property Name="LastUpdateDate" Type="Edm.Decimal" Precision="42" Scale="7" sap:aggregation-role="measure" sap:filterable="false" sap:text="LastUpdateDate_F" sap:updatable="false" sap:label="Last Updated" sap:quickinfo="Last Change Date Time" sap:creatable="false"/>
                 <Property Name="LastUpdateDate_F" Type="Edm.String" MaxLength="60" sap:label="Last Updated (Formatted)" sap:quickinfo="Last Change Date Time" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
             </EntityType>
