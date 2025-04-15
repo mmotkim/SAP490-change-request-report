@@ -132,7 +132,7 @@
             "smartVariantManagement": false,
             "tableSettings": {
               "multiSelect": false,
-              "type": "GridTable"
+              "type": "ResponsiveTable"
             },
             "keyPerformanceIndicators": {}
           }
