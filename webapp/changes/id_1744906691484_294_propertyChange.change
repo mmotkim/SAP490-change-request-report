@@ -1,5 +1,5 @@
 {
-    "fileName": "id_1744562362620_298_propertyChange",
+    "fileName": "id_1744906691484_294_propertyChange",
     "fileType": "change",
     "changeType": "propertyChange",
     "moduleName": "",
@@ -7,10 +7,10 @@
     "packageName": "",
     "content": {
         "property": "width",
-        "newValue": "5"
+        "newValue": "12%"
     },
     "selector": {
-        "id": "changerequest259::sap.suite.ui.generic.template.AnalyticalListPage.view.AnalyticalListPage::ZDEV259_CR_QUERY--table-IdTask",
+        "id": "changerequest259::sap.suite.ui.generic.template.AnalyticalListPage.view.AnalyticalListPage::ZDEV259_CR_QUERY--table-Title",
         "idIsLocal": false,
         "type": "sap.m.Column"
     },
@@ -18,7 +18,7 @@
     "texts": {},
     "namespace": "apps/changerequest259/changes/",
     "projectId": "",
-    "creation": 1744562362620,
+    "creation": 1744906710332,
     "originalLanguage": "",
     "support": {
         "generator": "changeUtils: SAPFioriTools",

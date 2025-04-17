@@ -134,15 +134,12 @@
               "multiSelect": false,
               "type": "ResponsiveTable"
             },
-            "keyPerformanceIndicators": {}
-          }
-        },
-        "pages": {
-          "ObjectPage|ZDEV259_CR_QUERY": {
-            "entitySet": "ZDEV259_CR_QUERY",
-            "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
-            "component": {
-              "name": "sap.suite.ui.generic.template.ObjectPage"
+            "keyPerformanceIndicators": {},
+            "filterSettings": {
+              "dateSettings": {
+                "useDateRange": true,
+                "selectedValues": "DATERANGE"
+              }
             }
           }
         }

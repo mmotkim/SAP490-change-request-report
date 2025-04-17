@@ -131,49 +131,6 @@
                         <PropertyPath>ModuleT</PropertyPath>
                     </Collection>
                 </Annotation>
-                
-                <Annotation Term="UI.Chart" Qualifier="filter2">
-                    <Record Type="UI.ChartDefinitionType">
-                        <PropertyValue Property="ChartType" EnumMember="UI.ChartType/Donut"/>
-                        <PropertyValue Property="Title" String="Start Date"/>
-                        <PropertyValue Property="Description" String="Start Date"/>
-                        <PropertyValue Property="Dimensions">
-                            <Collection>
-                                <PropertyPath>AssignedTeam</PropertyPath>
-                            </Collection>
-                        </PropertyValue>
-                        <PropertyValue Property="DimensionAttributes">
-                            <Collection>
-                                <Record Type="UI.ChartDimensionAttributeType">
-                                    <PropertyValue Property="Dimension" PropertyPath="AssignedTeam"/>
-                                    <PropertyValue Property="Role" EnumMember="UI.ChartDimensionRoleType/Category"/>
-                                </Record>
-                            </Collection>
-                        </PropertyValue>
-                        <PropertyValue Property="Measures">
-                            <Collection>
-                                <PropertyPath>Effort</PropertyPath>
-                            </Collection>
-                        </PropertyValue>
-                        <PropertyValue Property="MeasureAttributes">
-                            <Collection>
-                                <Record Type="UI.ChartMeasureAttributeType">
-                                    <PropertyValue Property="Measure" PropertyPath="Effort"/>
-                                    <PropertyValue Property="Role" EnumMember="UI.ChartMeasureRoleType/Axis1"/>
-                                </Record>
-                            </Collection>
-                        </PropertyValue>
-                    </Record>
-                </Annotation>
-                <Annotation Term="UI.PresentationVariant" Qualifier="filter2">
-                    <Record Type="UI.PresentationVariantType">
-                        <PropertyValue Property="Visualizations">
-                            <Collection>
-                                <AnnotationPath>@UI.Chart#filter2</AnnotationPath>
-                            </Collection>
-                        </PropertyValue>
-                    </Record>
-                </Annotation>
                 <Annotation Term="UI.Chart" Qualifier="filter3">
                     <Record Type="UI.ChartDefinitionType">
                         <PropertyValue Property="ChartType" EnumMember="UI.ChartType/Bar"/>
@@ -254,18 +211,44 @@
                         </PropertyValue>
                     </Record>
                 </Annotation>
-            </Annotations>
-            <Annotations Target="SAP.ZDEV259_CR_QUERYType/IdCr">
-                <Annotation Term="Common.ValueList">
-                    <Record Type="Common.ValueListType">
-                        <PropertyValue Property="CollectionPath" String="ZDEV259_CR_QUERY"/>
-                        <PropertyValue Property="PresentationVariantQualifier" String="filter2"/>
-                        <PropertyValue Property="Parameters">
+                <Annotation Term="UI.Chart" Qualifier="filter2">
+                    <Record Type="UI.ChartDefinitionType">
+                        <PropertyValue Property="ChartType" EnumMember="UI.ChartType/Donut"/>
+                        <PropertyValue Property="Title" String="CR by Prio"/>
+                        <PropertyValue Property="Description" String="CR by Prio"/>
+                        <PropertyValue Property="Dimensions">
                             <Collection>
-                                <Record Type="Common.ValueListParameterInOut">
-                                    <PropertyValue Property="LocalDataProperty" PropertyPath="AssignedTeam"/>
-                                    <PropertyValue Property="ValueListProperty" String="AssignedTeam"/>
+                                <PropertyPath>Priority</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="DimensionAttributes">
+                            <Collection>
+                                <Record Type="UI.ChartDimensionAttributeType">
+                                    <PropertyValue Property="Dimension" PropertyPath="Priority"/>
+                                    <PropertyValue Property="Role" EnumMember="UI.ChartDimensionRoleType/Category"/>
                                 </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Measures">
+                            <Collection>
+                                <PropertyPath>NumberOfCR</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="MeasureAttributes">
+                            <Collection>
+                                <Record Type="UI.ChartMeasureAttributeType">
+                                    <PropertyValue Property="Measure" PropertyPath="NumberOfCR"/>
+                                    <PropertyValue Property="Role" EnumMember="UI.ChartMeasureRoleType/Axis1"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.PresentationVariant" Qualifier="filter2">
+                    <Record Type="UI.PresentationVariantType">
+                        <PropertyValue Property="Visualizations">
+                            <Collection>
+                                <AnnotationPath>@UI.Chart#filter2</AnnotationPath>
                             </Collection>
                         </PropertyValue>
                     </Record>
@@ -297,6 +280,22 @@
                                 <Record Type="Common.ValueListParameterInOut">
                                     <PropertyValue Property="LocalDataProperty" PropertyPath="StartDate"/>
                                     <PropertyValue Property="ValueListProperty" String="StartDate"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP.ZDEV259_CR_QUERYType/Priority">
+                <Annotation Term="Common.ValueList">
+                    <Record Type="Common.ValueListType">
+                        <PropertyValue Property="CollectionPath" String="ZDEV259_CR_QUERY"/>
+                        <PropertyValue Property="PresentationVariantQualifier" String="filter2"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Priority"/>
+                                    <PropertyValue Property="ValueListProperty" String="Priority"/>
                                 </Record>
                             </Collection>
                         </PropertyValue>

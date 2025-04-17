@@ -7,7 +7,7 @@
     "packageName": "",
     "content": {
         "property": "width",
-        "newValue": "5"
+        "newValue": "10%"
     },
     "selector": {
         "id": "changerequest259::sap.suite.ui.generic.template.AnalyticalListPage.view.AnalyticalListPage::ZDEV259_CR_QUERY--table-AssignedTeam",
@@ -18,13 +18,13 @@
     "texts": {},
     "namespace": "apps/changerequest259/changes/",
     "projectId": "",
-    "creation": 1744562337934,
+    "creation": 1744906677639,
     "originalLanguage": "",
     "support": {
         "generator": "changeUtils: SAPFioriTools",
         "service": "",
         "user": "",
-        "sapui5Version": " ",
+        "sapui5Version": "1.108.33",
         "sourceChangeFileName": "",
         "compositeCommand": ""
     },
